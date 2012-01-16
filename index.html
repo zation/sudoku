@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+<head>
+    <title>Sudoku from Zation</title>
+    <script type="text/javascript" src="../jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="sudoku.js"></script>
+    <script type="text/javascript" src="grid.js"></script>
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var sudoku = new Sudoku();
+        })
+    </script>
+</head>
+
+<body>
+    <div id="topManu">
+        <span id="logo">Sudoku <span></span><span>Zation</span></span>
+        <div id="home"><a href="../">Home</a></div>
+        <div id="new">New</div>
+        <div id="restart">Restart</div>
+        <div id="level">Level</div>
+        <div id="solve">Solve</div>
+        <div><a target="_blank" href="https://github.com/zation/sudoku">Source Code</a></div>
+    </div>
+    <ul class="option" id="levels"><li class="select">Easy</li><li>Normal</li><li>Hard</li></ul>
+    <div id="sudoku"></div>
+    <table id="popUp">
+        <tr>
+            <td class="popCol" id="popUp1">1</td>
+            <td class="popCol" id="popUp2">2</td>
+            <td class="popCol" id="popUp3">3</td>
+            <td class="popCan" id="popUpClose">X</td>
+        </tr>
+        <tr>
+            <td class="popCol" id="popUp4">4</td>
+            <td class="popCol" id="popUp5">5</td>
+            <td class="popCol" id="popUp6">6</td>
+            <td class="icon_clear popCan" id="popUpClear" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td class="popCol" id="popUp7">7</td>
+            <td class="popCol" id="popUp8">8</td>
+            <td class="popCol" id="popUp9">9</td>
+        </tr>
+    </table>
+    <div class="infoContain">
+        <div id="info" style="display:none;">Test</div>
+    </div>
+    
+</body>
+</html>
