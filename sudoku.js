@@ -201,7 +201,7 @@ Sudoku.prototype = {
             $.each(restore, function(index, value) {
                 value.removeClass('highLight');
             })
-        })
+        });
         $(elem).click(function() {
             var thisPosi = $(this).position();
             that.popUp.hide();
@@ -216,6 +216,6 @@ Sudoku.prototype = {
             that.popUp.css('left', thisPosi.left - 6);
             that.currentCol = this;
             that.popUp.fadeIn(500);
-        })
+        });
     }
 }
